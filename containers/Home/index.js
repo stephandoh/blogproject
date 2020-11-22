@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css'
+import Post from '../../components/Post'
 
-
-function index() {
+function Home() {
     return (
-        <div>
-            
+        <div className='home'>
+            <Post />
         </div>
     )
 }
 
-export default index
+export default Home

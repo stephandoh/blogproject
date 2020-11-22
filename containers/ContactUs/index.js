@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.css'
 
-function index() {
+function ContactUs() {
     return (
-        <div>
-            <h1>Contact US</h1>
+        <div className='contact'>
+            Contact 
         </div>
     )
 }
 
-export default index
+export default ContactUs

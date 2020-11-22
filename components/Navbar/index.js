@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './style.css';
+import {NavLink} from 'react-router-dom';
 
 const Navbar=(props)=> {
 
@@ -20,11 +21,11 @@ const Navbar=(props)=> {
     return (
         <div className='navbar'>
             <ul className='navbarMenu'>
-                <li><a href='#'>Tema</a></li>
-                <li><a href='#'>Accra</a></li>
-                <li><a href='#'>Ho</a></li>
-                <li><a href='#'>Kpone</a></li>
-                <li><a href='#'>Bolga</a></li>
+                <li><NavLink to='/tech'>Technology</NavLink></li>
+                <li><NavLink to='/business'>Business</NavLink></li>
+                <li><NavLink to='/entertainment'>Entertainment</NavLink></li>
+                <li><NavLink to='/health'>Health</NavLink></li>
+                <li><NavLink to='/sports'>sports</NavLink></li>
             </ul>
             <div className='search'>
                 <form onSubmit={submitSearch}>
