@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Home from './containers/Home';
 import ContactUs from './containers/ContactUs';
@@ -17,12 +17,8 @@ function App() {
         <Route path='/' exact component={Home}/>
         <Route path='/contact-us' component={ContactUs}/>
         <Route path='/about-us' component={AboutUs}/>
-        
-
     </div>
-    </Router>
-    
-     
+    </Router>    
   );
 }
 
